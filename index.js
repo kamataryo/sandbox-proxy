@@ -6,7 +6,7 @@ http
     request(
       {
         url: 'http://example.com',
-        headers: { ...req.headers, 'accept-language': '' }
+        headers: { 'accept-language': '' }
       },
       (err, res2, body) => {
         res.end(body.toString())
